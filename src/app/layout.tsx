@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/sonner";
 import "@/styles/globals.css";
 import { type FC } from "react";
 type RootLayoutProps = {
@@ -13,6 +14,7 @@ const RootLayout: FC<RootLayoutProps> = (props) => {
   return (
     <html lang="ja">
       <body className="">{props.children}</body>
+      <Toaster />
     </html>
   );
 };
